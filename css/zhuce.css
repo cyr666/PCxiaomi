@@ -1,0 +1,195 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul,ol,li{
+	list-style: none;
+}
+html,body{
+	background:rgb(249,249,249)
+}
+
+/*容器*/
+.pack_b{
+	width:100%;
+	
+}
+.pack{
+	width:1239px;
+	margin:0 auto;
+	padding:0 auto;
+}
+.zhuce{
+	width:854px;
+	height:600px;
+	background:#fff;
+	margin-top:50px;
+	margin-left:193px;
+	text-align: center;
+}
+.logo img{
+	margin:0 403px;
+}
+h3{
+	font-size:30px;
+	font-weight: normal;
+	margin-top:42px;
+	margin-bottom: 38px;
+}
+.p0,.select,.Bselect,.prompt,.pnum,.phone,.area,#meg,.enroll,.agre,.Apass,#meg1{
+	margin-left:260px;
+	text-align: left;
+}
+.p0{
+	font-size:14px;
+	line-height: 30px;
+}
+
+.select{
+	width:333px;
+	height:42px;
+	line-height:37px;
+	border:1px solid #e8e8e8;
+	text-indent: 1em;
+	cursor: pointer;
+	font-size:14px;
+}
+
+.Bselect,.area{
+	width:333px;
+	height:260px;
+	border:1px solid #E8E8E8;
+	position: absolute;
+	overflow: auto;
+	display: none;
+	background:#fff;
+	
+}
+
+.Bselect ul>li{
+	height:37px;
+	border-bottom: 1px solid #e8e8e8;
+	border-top:1px solid #e8e8e8;
+	line-height: 37px;
+	cursor: pointer;
+	font-size:14px;
+}
+.Bselect ul>li:hover{
+	background:darkgray;
+}
+
+.Bselect ul>ol>li{
+	height:30px;
+	border-bottom: 1px solid #e8e8e8;
+	border-top:1px solid #e8e8e8;
+	background:pink;
+	line-height: 30px;
+}
+
+.prompt{
+	line-height:30px;
+	font-size:14px;
+}
+
+.pnum{
+	font-size:14px;
+	line-height:30px;
+	margin-top:10px;
+}
+
+.phone{
+	width:335px;
+	border:1px solid #e8e8e8;
+	/*text-indent: 1em;*/
+	/*box-sizing: border-box;*/
+}
+
+.phone .span1{
+	width:73px;
+	display: inline-block;
+	border-right: 1px solid #e8e8e8;
+	line-height: 42px;
+	font-size:12px;
+	color:#9d9d9d;
+	cursor: pointer;
+	text-indent: 1em;
+}
+.phone .input1{
+	border:none;
+	outline:none;
+	width:256px;
+	/*height:42px;*/
+	line-height: 42px;
+	font-size:12px;
+	color:#9d9d9d;
+}
+
+.area{
+	/*display: block;*/
+}
+
+.Ali{
+	height:37px;
+	border-bottom: 1px solid #e8e8e8;
+	border-top:1px solid #e8e8e8;
+	line-height: 37px;
+	text-indent: 1em;
+	font-size:14px;
+	cursor: pointer;
+	
+}
+.Ali:hover{
+	background:darkgray;
+}
+.Aspan{
+	width:50px;
+	height:37px;
+	line-height: 37px;
+	display: block;
+	float:right;
+	color:#9d9d9d
+}
+
+#meg,#meg1{
+	width:333px;
+	height:44px;
+	line-height: 44px;
+	visibility: hidden;
+}
+
+#meg #Mspan{
+	font-size:14px;
+	color:#ff6700;
+}
+#meg1 #Mspan1{
+	font-size:14px;
+	color:#ff6700;
+}
+.Apass{
+	display: block;
+	width:333px;
+	height: 42px;
+	text-indent: 1em;
+	outline:none;
+	
+}
+.enroll{
+	width:337px;
+	background:#ff6700;
+	/*margin-top:20px;*/
+	color:#fff;
+	text-align: center;
+	line-height: 42px;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+.agre{
+	color:#9d9d9d;
+	line-height:21px;
+	font-size:14px;
+	width:333px;
+}
+.agre span{
+	color:#000;
+	font-weight: bold;
+}

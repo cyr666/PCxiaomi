@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../css/shopcar.css"/>
+<title>小米6购物车</title>
+</head>
+<body>
+	<div class = "header">
+		<img src = "../image/023_01.png" class = "H_img1"/>
+		<h3>我的购物车</h3>
+		<p class = "H_p1">温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</p>
+		<ul class = "H_ul1">
+			<li class = "user"></li>
+			<li>我的订单</li>
+		</ul>
+	</div>
+	<div class = "mycar_b">
+		<div class = "table">
+			<div class = "mycar">
+				<div class = "car_check">
+					<input type = "checkbox" id = "all"/>
+					全选
+				</div>
+				<div class = "car_img">&nbsp;</div>
+				<div class = "car_name">商品名称</div>
+				<div class = "car_price">单价</div>
+				<div class = "car_num">数量</div>
+				<div class = "car_total">小计</div>
+				<div class = "car_action">操作</div>
+			</div>
+			<div class = "list_body" id = "list">
+				
+			</div>
+		</div>
+	</div>
+	<div class = "money">
+		<p class = "O_p1">继续购物</p>
+		<p class = "O_p2">共<span class = "O_span1"></span>件商品，已选择<span class = "O_span2"></span>件</p>
+		<p class = "O_p3">合计：<span class = "O_span3"></span>元</p>
+		<p class = "O_p4">去结算</p>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src = "../js/dizhi.json"></script>
+<script type="text/javascript" src = "../js/cookie.js"></script>
+<script type="text/javascript" src = "../js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src = "../js/shopcar.js"></script>

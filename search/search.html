@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style>
+	li{font-size:14px;
+		line-height:20px;}
+	#inp{width:300px;
+			height:30px;}
+	#div1{width:302px;
+			background:#fffbf3;
+			border:1px solid gray;
+			display:none}
+	#div1 *{margin:0;
+			padding:0;}
+</style>
+</head>
+<body>
+	<input id = "inp"/>
+	<div id = "div1"></div>
+</body>
+</html>
+<script src = "ajax.js"></script>
+<script>
+var ind = 0;
+	inp.onkeyup = function(e){
+		var e = e || window.e;
+		var code = e.which || e.keyCode;
+		var lis = div1.getElementsByTagName("li")
+		var len = lis.length;
+		switch(code){
+			case 13:
+				inp.value = lis[ind].innerText;
+				div1.style.display = "none";
+			break;
+			case 38:
+				ind--;
+				if(ind == -1){ind=len -1}
+				for(var i = 0;i<len;i++){
+					lis[i].style.background = "";
+				}
+				lis[ind].style.background = "#febfa1"
+			break;
+			case 40:
+				ind++;
+				if(ind == len){ind=0}
+				for(var i = 0;i<len;i++){
+					lis[i].style.background = "";
+				}
+				lis[ind].style.background = "#febfa1"
+			break;
+			default:
+			
+		var w = inp.value;
+		if( w!="" ){			
+			get("chk.php?w="+w,function(str){
+				div1.innerHTML = "";
+				//div1.style.display="none";
+				var ul = document.createElement("ul")				
+//				console.log(str) 得到的结果是|java|javascript|jsasas等这样的字符串
+				var arr = str.split("|");
+//				console.log(arr) 得到的是["","java","javascript"]
+				var i = 1,l = arr.length;
+				console.log(l)
+				for(; i<l; i++){
+					var li = document.createElement("li");
+					li.innerHTML = arr[i].replace(eval("/"+w+"/g"),"<font color=red>"+w+"</font>");
+					ul.appendChild(li)
+					li.onclick = function(){
+						inp.value = this.innerText;//注意要用this；
+						div1.style.display = "none"
+					}
+				}
+				div1.appendChild(ul)
+				if(l>1){//大于1的原因是数组中的第一位是空的
+					div1.style.display = "block";
+					div1.getElementsByTagName("li")[ind].style.background = "#febfa1"
+				}
+			})
+		}else{
+			div1.style.display = "none"
+		}
+	}
+}
+		
+</script>

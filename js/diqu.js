@@ -1,0 +1,23 @@
+var diqu = {
+	"type":["国家"],
+	"list":[{"id":"1","country":"中国","quhao":"+86"},
+			{"id":"2","country":"中国台湾","quhao":"+886"},
+			{"id":"3","country":"中国香港","quhao":"+852"},
+			{"id":"4","country":"美国","quhao":"+186"},
+			{"id":"5","country":"日本","quhao":"+123"},
+			{"id":"6","country":"文莱","quhao":"+252"},
+			{"id":"7","country":"印尼","quhao":"+872"},
+			{"id":"8","country":"韩国","quhao":"+472"},
+			{"id":"9","country":"新加坡","quhao":"+662"},
+			{"id":"10","country":"德国","quhao":"+982"},
+			{"id":"11","country":"俄国","quhao":"+873"},
+			{"id":"12","country":"新西兰","quhao":"+122"},
+			{"id":"13","country":"比利时","quhao":"+142"},
+			{"id":"14","country":"纽约","quhao":"+856"},
+			{"id":"15","country":"法国","quhao":"+877"},
+			{"id":"16","country":"爱尔兰","quhao":"+772"},
+			{"id":"17","country":"圣彼得堡","quhao":"+832"},
+			{"id":"18","country":"大兴安岭","quhao":"+802"},
+			{"id":"19","country":"运城","quhao":"+666"}
+	]
+}
